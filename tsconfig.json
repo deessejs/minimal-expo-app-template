@@ -1,0 +1,8 @@
+{
+  "extends": "./apps/mobile/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true
+  },
+  "include": ["apps/mobile/**/*.ts", "apps/mobile/**/*.tsx", "apps/mobile/.expo/types/**/*.ts"]
+}
