@@ -59,7 +59,7 @@ The **Android preview APK** GitHub Actions workflow can be started manually from
 
 The workflow needs an Expo project and an Android signing credential before its first successful run:
 
-1. Create a project in your Expo account for the app slug `deessejs-starter` and record its project ID. You can use the Expo dashboard or the EAS CLI. Do not commit the ID.
+1. Create a project in your Expo account for the app slug `minimal-expo-app-template` and record its project ID. You can use the Expo dashboard or the EAS CLI. Do not commit the ID.
 2. Configure an Android app signing keystore for this Expo project with `EXPO_PROJECT_ID=<your-project-id> pnpm dlx eas-cli@27.11.0 credentials --platform android`. Store the credential with the Expo project so the local runner can retrieve it. Keep the keystore private; it does not belong in this repository.
 3. Create these GitHub **Actions repository secrets**:
    - `EXPO_TOKEN`: an Expo access token authorized for the project.

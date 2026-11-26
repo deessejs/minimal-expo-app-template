@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "DeesseJS Starter",
-    "slug": "deessejs-starter",
+    "slug": "minimal-expo-app-template",
     "scheme": "deessejs-starter",
     "version": "1.0.0",
     "orientation": "portrait",
