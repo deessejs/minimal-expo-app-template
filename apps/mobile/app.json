@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "DeesseJS Starter",
+    "slug": "deessejs-starter",
+    "scheme": "deessejs-starter",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.deessejsstarter"
+    },
+    "android": {
+      "package": "com.example.deessejsstarter"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
