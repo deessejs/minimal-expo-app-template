@@ -1,44 +1,23 @@
 import { Link } from 'expo-router';
-import { StyleSheet, Text, View } from 'react-native';
+import { ArrowLeft } from 'lucide-react-native';
+import { Pressable, Text, View } from 'react-native';
 
 export default function DetailsScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Your next screen</Text>
-      <Text style={styles.description}>
+    <View className="flex-1 justify-center gap-4 bg-[#fbfaff] px-7">
+      <Text className="text-[30px] font-bold text-[#201a35]">Your next screen</Text>
+      <Text className="max-w-[360px] text-[17px] leading-[25px] text-[#625d70]">
         This route lives in its own file. Add another route by adding a file to the app folder.
       </Text>
-      <Link href="/" style={styles.link}>
-        ← Back home
+      <Link href="/" asChild>
+        <Pressable
+          accessibilityRole="button"
+          className="mt-3 flex-row items-center gap-2 self-start rounded-full bg-[#523d9a] px-4 py-3 active:opacity-80"
+        >
+          <ArrowLeft color="white" size={18} />
+          <Text className="text-base font-semibold text-white">Back home</Text>
+        </Pressable>
       </Link>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: 28,
-    gap: 16,
-  },
-  title: {
-    color: '#201a35',
-    fontSize: 30,
-    fontWeight: '700',
-  },
-  description: {
-    color: '#625d70',
-    fontSize: 17,
-    lineHeight: 25,
-    maxWidth: 360,
-  },
-  link: {
-    alignSelf: 'flex-start',
-    color: '#523d9a',
-    fontSize: 16,
-    fontWeight: '600',
-    marginTop: 12,
-    paddingVertical: 10,
-  },
-});

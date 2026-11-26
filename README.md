@@ -86,4 +86,6 @@ apps/mobile/          Expo app, routes, config, and EAS build profile
 .github/workflows/    Manual Android local-build workflow
 ```
 
+Screen styling uses NativeWind 4 utility classes directly on React Native components. Keep style declarations in class names; `apps/mobile/global.css` is the minimal Tailwind entry point required by NativeWind.
+
 The repository uses Continuous Native Generation. Generated `android/` and `ios/` folders are ignored; keep native configuration in Expo config and config plugins unless a documented Expo requirement calls for committed native projects.
